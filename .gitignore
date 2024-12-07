@@ -1,0 +1,9 @@
+
+# sst
+.sst
+
+# node
+node_modules
+
+# temporary files
+.#*
