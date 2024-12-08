@@ -3,8 +3,5 @@ export const myTable = new sst.aws.Dynamo("MyTable", {
         id: "string",
         createdAt: "number",
     },
-    primaryIndex: { hashKey: "id" },
-    globalIndexes: {
-        CreatedAtIndex: { hashKey: "id", rangeKey: "createdAt" }
-    }
+    primaryIndex: { hashKey: "id", rangeKey: "createdAt" }
 });
